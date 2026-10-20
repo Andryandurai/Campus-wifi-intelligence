@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: campus-wifi-intelligence-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    # initialize_application() only runs under __main__, so start with python (not gunicorn).
+    # The committed campus_wifi.db is non-empty, so first boot skips the slow data bootstrap.
+    startCommand: python app.py
+    healthCheckPath: /api/analytics/kpis
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: JWT_SECRET_KEY
+        generateValue: true

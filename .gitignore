@@ -1,0 +1,11 @@
+node_modules/
+dist/
+venv/
+__pycache__/
+*.pyc
+backend/*.db-wal
+backend/*.db-shm
+backend/*.db-journal
+.vscode/
+.vercel/
+.env

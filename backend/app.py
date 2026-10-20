@@ -2,6 +2,7 @@ import os
 import json
 from flask import Flask, request, jsonify, g
 from flask_cors import CORS
+from werkzeug.middleware.proxy_fix import ProxyFix
 from config import Config
 from database import init_db, get_db_connection
 from security import (
@@ -23,6 +24,9 @@ from services.recommendation_service import generate_recommendations, get_recomm
 
 app = Flask(__name__)
 app.config.from_object(Config)
+
+# Behind Vercel -> Render proxies, rate limit on the forwarded client IP, not the proxy's
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=2)
 
 # Configure CORS with explicit allowed origins & headers
 CORS(
