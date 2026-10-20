@@ -1,0 +1,103 @@
+{
+  "campus_name": "REC Campus Wi-Fi Intelligence Network",
+  "coordinates_origin": {"lat": 13.0082, "lng": 80.0034},
+  "blocks": [
+    {
+      "code": "BLOCK_A",
+      "name": "Block A (Science & Engg)",
+      "type": "Academic",
+      "capacity": 1200,
+      "position": {"x": -45, "y": 6, "z": -35},
+      "size": {"width": 30, "height": 14, "depth": 24},
+      "color": "#3B82F6",
+      "accent_color": "#1D4ED8",
+      "floors": 4,
+      "aps": ["AP_A_01", "AP_A_02", "AP_A_03", "AP_A_04"]
+    },
+    {
+      "code": "BLOCK_B",
+      "name": "Block B (IT & Computing)",
+      "type": "Academic / High-Demand",
+      "capacity": 1500,
+      "position": {"x": 5, "y": 8, "z": -35},
+      "size": {"width": 35, "height": 18, "depth": 25},
+      "color": "#EF4444",
+      "accent_color": "#B91C1C",
+      "floors": 5,
+      "aps": ["AP_B_01", "AP_B_02", "AP_B_03", "AP_B_04", "AP_B_05"]
+    },
+    {
+      "code": "BLOCK_C",
+      "name": "Block C (Mechanical & Civil)",
+      "type": "Academic",
+      "capacity": 1000,
+      "position": {"x": -45, "y": 5.5, "z": 15},
+      "size": {"width": 28, "height": 12, "depth": 22},
+      "color": "#F59E0B",
+      "accent_color": "#D97706",
+      "floors": 3,
+      "aps": ["AP_C_01", "AP_C_02", "AP_C_03"]
+    },
+    {
+      "code": "BLOCK_D",
+      "name": "Block D (Management & Humanities)",
+      "type": "Academic",
+      "capacity": 800,
+      "position": {"x": 5, "y": 5, "z": 15},
+      "size": {"width": 26, "height": 11, "depth": 20},
+      "color": "#10B981",
+      "accent_color": "#059669",
+      "floors": 3,
+      "aps": ["AP_D_01", "AP_D_02", "AP_D_03"]
+    },
+    {
+      "code": "LIBRARY",
+      "name": "Central Library",
+      "type": "Study / Research",
+      "capacity": 1100,
+      "position": {"x": 50, "y": 7, "z": -30},
+      "size": {"width": 32, "height": 15, "depth": 28},
+      "color": "#F97316",
+      "accent_color": "#C2410C",
+      "floors": 4,
+      "aps": ["AP_LIB_01", "AP_LIB_02", "AP_LIB_03", "AP_LIB_04"]
+    },
+    {
+      "code": "CANTEEN",
+      "name": "Campus Food Court & Canteen",
+      "type": "Dining / High-Burst",
+      "capacity": 900,
+      "position": {"x": 50, "y": 4.5, "z": 15},
+      "size": {"width": 28, "height": 10, "depth": 22},
+      "color": "#EC4899",
+      "accent_color": "#BE185D",
+      "floors": 2,
+      "aps": ["AP_CAN_01", "AP_CAN_02", "AP_CAN_03"]
+    },
+    {
+      "code": "HOSTEL",
+      "name": "Student Hostels Complex",
+      "type": "Residential / Evening-Peak",
+      "capacity": 2200,
+      "position": {"x": 95, "y": 9, "z": -10},
+      "size": {"width": 36, "height": 22, "depth": 48},
+      "color": "#8B5CF6",
+      "accent_color": "#6D28D9",
+      "floors": 6,
+      "aps": ["AP_HST_01", "AP_HST_02", "AP_HST_03", "AP_HST_04", "AP_HST_05"]
+    },
+    {
+      "code": "ADMIN",
+      "name": "Administrative Hub",
+      "type": "Operations",
+      "capacity": 500,
+      "position": {"x": 50, "y": 5, "z": 50},
+      "size": {"width": 25, "height": 11, "depth": 18},
+      "color": "#64748B",
+      "accent_color": "#334155",
+      "floors": 2,
+      "aps": ["AP_ADM_01", "AP_ADM_02"]
+    }
+  ]
+}
+
